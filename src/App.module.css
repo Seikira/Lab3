@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure body takes full height */
+    display: flex;
+    justify-content: flex-start; /* Align everything to the left */
+    align-items: flex-start; /* Align content at the top */
+    flex-direction: column; /* Stack header and list */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center header content horizontally */
+    width: 100%; /* Ensure the header takes full width */
+    margin-bottom: 20px; /* Space between header and cards */
+}
+
+    header .globe-icon {
+        width: 40px; /* Adjust size of the globe icon */
+        margin-right: 10px; /* Space between the globe icon and title */
+    }
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+    text-align: center;
+}
+
+/* Overall Layout for the List (of cards) */
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align cards to the left */
+    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* Limit width of the cards container */
+    overflow-y: auto; /* Ensure scrollable if content overflows */
+}
